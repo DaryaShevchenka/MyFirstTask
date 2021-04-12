@@ -1,14 +1,20 @@
 //
-//  SecondVC.swift
+//  SecondViewController.swift
 //  Task2
 //
-//  Created by Darya Drobyshevsky on 4/10/21.
+//  Created by Darya Drobyshevsky on 4/11/21.
 //
 
 import UIKit
 
-class SecondVC: UIViewController {
+class SecondViewController: UIViewController {
 
+    @IBAction func goToThird(_ sender: UIButton) {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let thirdScreen = storyboard.instantiateViewController(identifier: "thirdScreen")
+        self.show(thirdScreen, sender: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 

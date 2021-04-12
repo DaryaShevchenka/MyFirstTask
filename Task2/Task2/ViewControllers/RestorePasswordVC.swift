@@ -12,6 +12,13 @@ import UIKit
 
 class RestorePasswordVC: UIViewController {
     
+    @IBAction func renewPassword(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let lastPag = storyboard.instantiateViewController(identifier: "lastPage")
+        
+        self.show(lastPag, sender: nil)
+    }
     func signOutHandler(_ action: UIAlertAction) {
         
     }

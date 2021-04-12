@@ -87,10 +87,10 @@
             </objects>
             <point key="canvasLocation" x="-145" y="-436"/>
         </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="UFh-WN-hto">
             <objects>
-                <viewController storyboardIdentifier="SignInEdentifier" id="iGl-Ks-fPp" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignInEdentifier" id="iGl-Ks-fPp" customClass="SecondViewController" customModule="Task2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="L8Y-is-DZC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -164,6 +164,7 @@
                                             <action selector="EnterButton:" destination="Vjk-SJ-Dbp" eventType="touchUpInside" id="6BJ-CH-pRS"/>
                                             <action selector="enterButton:" destination="Vjk-SJ-Dbp" eventType="touchUpInside" id="ZmY-vU-Jti"/>
                                             <action selector="gdfsjf:" destination="Vjk-SJ-Dbp" eventType="touchUpInside" id="AGJ-Yy-Zue"/>
+                                            <action selector="goToThird:" destination="iGl-Ks-fPp" eventType="touchUpInside" id="geb-Gg-sW3"/>
                                             <action selector="second:" destination="Vjk-SJ-Dbp" eventType="touchUpInside" id="GZV-CX-HFe"/>
                                             <action selector="secondVCPressed:" destination="Vjk-SJ-Dbp" eventType="touchUpInside" id="B7m-M9-zci"/>
                                         </connections>
@@ -266,10 +267,10 @@
             </objects>
             <point key="canvasLocation" x="613" y="-378"/>
         </scene>
-        <!--SecondVC-->
+        <!--Third View Controller-->
         <scene sceneID="Uuc-ba-Rav">
             <objects>
-                <viewController storyboardIdentifier="anotherScreen" id="FHi-hg-RI3" customClass="SecondVC" customModule="Task2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="thirdScreen" id="FHi-hg-RI3" customClass="ThirdViewController" customModule="Task2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="U5e-tv-bnQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -323,8 +324,8 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
+                                            <action selector="goToThirdScreen:" destination="FHi-hg-RI3" eventType="touchUpInside" id="3xw-OK-Co9"/>
                                             <action selector="prssed:" destination="FHi-hg-RI3" eventType="touchUpInside" id="C3w-T5-Xcu"/>
-                                            <segue destination="Pqx-91-AT8" kind="show" id="WN8-Vt-fvu"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sBK-bi-171">
@@ -392,22 +393,22 @@
         <!--Restore PasswordVC-->
         <scene sceneID="qBR-2S-FDM">
             <objects>
-                <viewController id="Pqx-91-AT8" customClass="RestorePasswordVC" customModule="Task2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="renewParol" id="Pqx-91-AT8" customClass="RestorePasswordVC" customModule="Task2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XBK-eb-Fff">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="6PY-qb-2ht">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Привет!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSV-Vf-Jz9">
-                                <rect key="frame" x="20" y="75" width="374" height="39"/>
+                                <rect key="frame" x="20" y="119" width="374" height="39"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4fc-eY-OQs">
-                                <rect key="frame" x="0.0" y="298" width="414" height="510"/>
+                                <rect key="frame" x="0.0" y="352" width="414" height="510"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PressDress" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7fP-mM-3Ia">
                                         <rect key="frame" x="32" y="32" width="302" height="29"/>
@@ -443,8 +444,8 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
+                                            <action selector="renewPassword:" destination="Pqx-91-AT8" eventType="touchUpInside" id="VjE-ZS-Ym1"/>
                                             <action selector="restorePasswordPressed:" destination="Pqx-91-AT8" eventType="touchUpInside" id="ghU-Ew-25e"/>
-                                            <segue destination="8SY-0H-7ab" kind="show" id="Bmt-3Q-Zgk"/>
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aym-gv-2eE">
@@ -496,25 +497,25 @@
             </objects>
             <point key="canvasLocation" x="2000.0000000000002" y="-378.34821428571428"/>
         </scene>
-        <!--View Controller-->
+        <!--Last View Controller-->
         <scene sceneID="iBq-1b-XJk">
             <objects>
-                <viewController id="8SY-0H-7ab" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="lastPage" id="8SY-0H-7ab" customClass="LastViewController" customModule="Task2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DcC-7B-jjc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="f44-QD-i8E">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Привет!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bkX-Vl-c7d">
-                                <rect key="frame" x="20" y="75" width="374" height="39"/>
+                                <rect key="frame" x="20" y="119" width="374" height="39"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xzd-pK-l4v">
-                                <rect key="frame" x="0.0" y="543" width="414" height="265"/>
+                                <rect key="frame" x="0.0" y="597" width="414" height="265"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PressDress" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f06-Sr-xJQ">
                                         <rect key="frame" x="32" y="32" width="117" height="29"/>
@@ -551,6 +552,14 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="REF-eW-c5O">
+                                        <rect key="frame" x="184" y="215" width="46" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Назад"/>
+                                        <connections>
+                                            <action selector="cameBackButton:" destination="8SY-0H-7ab" eventType="touchUpInside" id="cnA-VU-RIz"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
@@ -559,9 +568,12 @@
                                     <constraint firstItem="uNM-uJ-DSw" firstAttribute="leading" secondItem="xzd-pK-l4v" secondAttribute="leading" constant="32" id="9rP-So-iSd"/>
                                     <constraint firstItem="k61-TA-YWn" firstAttribute="leading" secondItem="xzd-pK-l4v" secondAttribute="leading" constant="32" id="Foz-el-4Wk"/>
                                     <constraint firstAttribute="bottom" secondItem="uNM-uJ-DSw" secondAttribute="bottom" constant="58" id="LLe-HF-Q5r"/>
+                                    <constraint firstAttribute="trailing" secondItem="REF-eW-c5O" secondAttribute="trailing" constant="184" id="Ldd-re-u5P"/>
                                     <constraint firstItem="f06-Sr-xJQ" firstAttribute="centerY" secondItem="kAE-9v-H7y" secondAttribute="centerY" id="SYi-nl-yJT"/>
+                                    <constraint firstItem="REF-eW-c5O" firstAttribute="leading" secondItem="xzd-pK-l4v" secondAttribute="leading" constant="184" id="ZHr-yD-1H5"/>
                                     <constraint firstItem="f06-Sr-xJQ" firstAttribute="top" secondItem="xzd-pK-l4v" secondAttribute="top" constant="32" id="bLA-qB-mUA"/>
                                     <constraint firstItem="uNM-uJ-DSw" firstAttribute="top" secondItem="k61-TA-YWn" secondAttribute="bottom" constant="32" id="beg-Jg-QBN"/>
+                                    <constraint firstAttribute="bottom" secondItem="REF-eW-c5O" secondAttribute="bottom" constant="20" symbolic="YES" id="blM-Tw-0so"/>
                                     <constraint firstItem="f06-Sr-xJQ" firstAttribute="leading" secondItem="xzd-pK-l4v" secondAttribute="leading" constant="32" id="cF8-0q-7AM"/>
                                     <constraint firstAttribute="trailing" secondItem="uNM-uJ-DSw" secondAttribute="trailing" constant="32" id="l7m-9W-vB2"/>
                                     <constraint firstAttribute="trailing" secondItem="kAE-9v-H7y" secondAttribute="trailing" constant="32" id="pPV-CM-GKI"/>
