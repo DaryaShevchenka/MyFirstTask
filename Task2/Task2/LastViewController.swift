@@ -8,7 +8,10 @@
 import UIKit
 
 class LastViewController: UIViewController {
-
+    @IBAction func cameBackButtonPressed(_ sender: UIButton) {
+        navigationController?.popToRootViewController(animated: true)
+    }
+    
     @IBAction func cameBackButton(_ sender: UIButton) {
       
     }

@@ -7,12 +7,12 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class SingInViewController: UIViewController {
 
     @IBAction func goToThird(_ sender: UIButton) {
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let thirdScreen = storyboard.instantiateViewController(identifier: "thirdScreen")
+        let thirdScreen = storyboard.instantiateViewController(identifier: "renewParol")
         self.show(thirdScreen, sender: nil)
     }
     override func viewDidLoad() {
