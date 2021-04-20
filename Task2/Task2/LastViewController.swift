@@ -1,14 +1,20 @@
 //
-//  SecondVC.swift
+//  LastViewController.swift
 //  Task2
 //
-//  Created by Darya Drobyshevsky on 4/10/21.
+//  Created by Darya Drobyshevsky on 4/11/21.
 //
 
 import UIKit
 
-class SecondVC: UIViewController {
-
+class LastViewController: UIViewController {
+    @IBAction func cameBackButtonPressed(_ sender: UIButton) {
+        navigationController?.popToRootViewController(animated: true)
+    }
+    
+    @IBAction func cameBackButton(_ sender: UIButton) {
+      
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
